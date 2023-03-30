@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int data = 50;
+    int *ptr = &data;
+
+    int **ptr1 =&ptr;
+    cout<<*ptr<<endl;
+    cout<<**ptr1<<endl;
+
+
+    /// value change using double pointer
+
+    **ptr1 = 500;
+    cout<<data<<endl;
+    cout<<*ptr<<endl;
+
+    int ***ptr2 = &ptr1;
+    cout<<***ptr2<<endl;
+
+    ***ptr2 = 1000;
+    /// value change using 3 pointer
+
+    cout<<data<<endl;
+    cout<<*ptr<<endl;
+    return 0;
+}
