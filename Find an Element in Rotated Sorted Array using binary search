@@ -68,7 +68,17 @@ int main()
 
    int ans = minIndex(ar,n);
    cout<<ans<<endl;
-   cout<<binarySearch(ar,n,ans,12)<<endl;
+   int value;
+   cin>>value;
+   int result = binarySearch(ar,n,ans,value);
+   if(result == -1)
+   {
+       cout<<value<<" is not found"<<endl;
+   }
+   else
+   {
+       cout<<value<<" is found at position "<<result<<endl;
+   }
 
     return 0;
 }
