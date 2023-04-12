@@ -1,0 +1,44 @@
+#include<bits/stdc++.h>
+using namespace std;
+int bs(int ar[],int n,int target)
+{
+   int lb = 0,ub = n,ans = 0;
+   while(lb<=ub)
+   {
+       int mid = (lb+ub)/2;
+       if(ar[mid] == target)
+       {
+           ans = mid;
+           lb = mid+1;
+
+       }
+       else if(target>ar[mid])
+       {
+           lb = mid + 1;
+       }
+       else
+       {
+           ub = mid -1;
+       }
+   }
+   return ans;
+}
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+    int ar[10] = {1,2,3,4,4,4,4,8,9,10};
+
+
+    int target;
+    cin>>target;
+    int n = sizeof(ar)/sizeof(ar[0]);
+
+     int ans = bs(ar,n,target);
+
+    if(ans==0) cout<<target<<" is not found."<<endl;
+    else cout<<"Last occurence of "<<target<<" is "<<ans<<endl;
+}
+
