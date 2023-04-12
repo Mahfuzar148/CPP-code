@@ -1,0 +1,28 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int ar[] = {10,11,12,13,14,1,2,3,4,5,6};
+    int n = sizeof(ar)/sizeof(ar[0]);
+    int ans = 0, l=0,h=n;
+    while(l<=n)
+    {
+        int mid =(l+h)/2;
+        if(ar[mid+1]>ar[mid]&&ar[mid]<ar[mid-1])
+        {
+            ans = mid;
+            break;
+        }
+        else if(ar[mid]<ar[h])
+        {
+            h = mid-1;
+        }
+        else
+        {
+            l = mid + 1;
+        }
+    }
+    cout<<ans<<endl;
+    return 0;
+}
