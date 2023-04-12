@@ -1,0 +1,74 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+int minIndex(int arra[],int n)
+{
+    int ans = 0, l=0,h=n-1;
+    cout<<l<<" "<<h<<endl;
+    for(int i=0;i<n;i++) cout<<arra[i]<<" ";
+    cout<<endl;
+
+    while(l<=h)
+    {
+        int mid =(l+h)/2;
+        cout<<"mid = "<<mid<<endl;
+        if(arra[mid+1]>arra[mid]&&arra[mid]<arra[mid-1])
+        {
+            ans = mid;
+            break;
+        }
+        else if(arra[mid]<arra[h])
+        {
+            h = mid-1;
+        }
+        else
+        {
+            l = mid + 1;
+        }
+    }
+   return ans;
+}
+int binarySearch(int ar[],int n,int l,int target)
+{
+    int lb,ub;
+    if(ar[l]==target) return l;
+    else if(target>ar[l]&&target>ar[n-1])
+    {
+        lb = 0,ub = l-1;
+    }
+    else
+    {
+        lb = l-1,ub = n-1;
+    }
+
+    while(lb<=ub)
+    {
+        int mid = (lb+ub)/2;
+        if(ar[mid]==target)
+        {
+            return mid;
+        }
+        else if(target>ar[mid])
+        {
+            lb = mid + 1;
+        }
+        else
+        {
+            ub = mid -1;
+        }
+    }
+    return -1;
+}
+
+
+int main()
+{
+    int ar[] = {10,11,12,13,14,1,2,3,4,5,6};
+    int n = sizeof(ar)/sizeof(ar[0]);
+
+   int ans = minIndex(ar,n);
+   cout<<ans<<endl;
+   cout<<binarySearch(ar,n,ans,12)<<endl;
+
+    return 0;
+}
