@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+#include<stdio.h>
+#include<stdlib.h>
+using namespace std;
+
+int main() {
+    int T;
+    scanf("%d", &T);
+
+    for (int caseNum = 1; caseNum <= T; caseNum++) {
+        int N, Q;
+        scanf("%d%d", &N, &Q);
+        long long distances[N];
+        for (int i = 0; i < N; i++) {
+            scanf("%lld", &distances[i]);
+        }
+
+        long long prefixSum[N + 1] = {0};
+
+        for (int i = 1; i <= N; i++) {
+            prefixSum[i] = prefixSum[i - 1] + distances[i - 1];
+        }
+
+        printf("Case %d:\n", caseNum);
+        while (Q--) {
+            int t1, t2;
+            scanf("%d%d", &t1, &t2);
+            long long distance = prefixSum[t2] - prefixSum[t1 - 1];
+            printf("%lld\n", distance);
+        }
+    }
+
+    return 0;
+}
