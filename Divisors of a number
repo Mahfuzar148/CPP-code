@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    set<int>s;
+    for(int i = 1;i*i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            s.insert(i);
+            s.insert(n/i);
+        }
+    }
+    cout<<s.size()<<endl;
+    for(auto it : s) cout<<it<<" ";
+    return 0;
+}
