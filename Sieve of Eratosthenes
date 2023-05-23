@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+void Sieve(int n)
+{
+    bool ar[n+1];
+    memset(ar,true,sizeof(ar));
+    ar[0] = false;
+    ar[1] = false;
+
+    for(int i=2;i*i<=n;i++)
+    {
+        if(ar[i]==true)
+        {
+            for(int j = i*i;j<=n;j+=i)
+            {
+                ar[j] = false;
+            }
+        }
+    }
+    cout<<"Total prime number = "<<count(ar,ar+n+1,true)<<endl;
+
+    for(int i=2;i<=n;i++)
+    {
+        if(ar[i]==true)
+        {
+            cout<<i<<" ";
+        }
+    }
+}
+int main()
+{
+     int n;
+    cin>>n;
+    Sieve(n);
+
+    return 0;
+
+}
