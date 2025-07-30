@@ -1,30 +1,64 @@
 
 ---
 
-## 🔷 1. **Find the Square Root of a Number**
+---
 
-### ❓ Problem:
-
-Given `n`, find the largest integer `x` such that `x^2 ≤ n` using binary search.
-
-### ✅ C++ Solution:
+### ✅ Full C++ Code: Find Floor of Square Root using Binary Search
 
 ```cpp
+#include <iostream>
+using namespace std;
+
+// Function to find largest x such that x^2 <= n
 int squareRoot(int n) {
     int left = 0, right = n, ans = 0;
     while (left <= right) {
         int mid = left + (right - left) / 2;
+
         if (1LL * mid * mid <= n) {
-            ans = mid;
-            left = mid + 1;
-        } else right = mid - 1;
+            ans = mid;         // mid is a possible answer
+            left = mid + 1;    // try to find a bigger one
+        } else {
+            right = mid - 1;   // mid is too big
+        }
     }
     return ans;
 }
+
+int main() {
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+
+    int result = squareRoot(n);
+    cout << "Largest x such that x^2 <= " << n << " is: " << result << endl;
+
+    return 0;
+}
 ```
 
-📥 **Input:** `n = 10`
-📤 **Output:** `3`
+---
+
+### 🧪 Sample I/O:
+
+```
+Enter a number: 10
+Largest x such that x^2 <= 10 is: 3
+```
+
+---
+
+### 🧠 Time Complexity:
+
+* **O(log n)** — Binary search reduces the range exponentially.
+
+### ✅ Notes:
+
+* This gives the **floor** value of square root.
+* Uses `1LL * mid * mid` to avoid integer overflow during multiplication.
+
+---
+
 
 ---
 
