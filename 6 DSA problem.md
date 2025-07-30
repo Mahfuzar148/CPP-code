@@ -175,28 +175,77 @@ int searchRotated(int arr[], int n, int target) {
 
 ## 🔷 3. **Finding Minimum in a Rotated Sorted Array**
 
-### ❓ Problem:
 
-Find the minimum element in a rotated sorted array (all elements distinct).
+---
 
-### ✅ C++ Solution:
+## ✅ Full Code with Multiple Test Cases
 
 ```cpp
+#include <iostream>
+using namespace std;
+
 int findMin(int arr[], int n) {
-    int left = 0, right = n-1;
+    int left = 0, right = n - 1;
+
     while (left < right) {
-        int mid = (left + right)/2;
+        int mid = (left + right) / 2;
+
+        // Right side is unsorted → minimum must be there
         if (arr[mid] > arr[right])
             left = mid + 1;
         else
-            right = mid;
+            right = mid; // mid might be minimum
     }
+
     return arr[left];
+}
+
+int main() {
+    // Test Case 1
+    int arr1[] = {3, 4, 5, 1, 2};
+    cout << "Minimum in arr1: " << findMin(arr1, 5) << endl; // Output: 1
+
+    // Test Case 2
+    int arr2[] = {10, 12, 15, 2, 5, 6, 8};
+    cout << "Minimum in arr2: " << findMin(arr2, 7) << endl; // Output: 2
+
+    // Test Case 3
+    int arr3[] = {1, 2, 3, 4, 5}; // not rotated
+    cout << "Minimum in arr3: " << findMin(arr3, 5) << endl; // Output: 1
+
+    // Test Case 4
+    int arr4[] = {5, 1, 2, 3, 4};
+    cout << "Minimum in arr4: " << findMin(arr4, 5) << endl; // Output: 1
+
+    // Test Case 5
+    int arr5[] = {2};
+    cout << "Minimum in arr5: " << findMin(arr5, 1) << endl; // Output: 2
+
+    return 0;
 }
 ```
 
-📥 **Input:** `arr = [3,4,5,1,2]`
-📤 **Output:** `1`
+---
+
+## 🧪 Output:
+
+```
+Minimum in arr1: 1
+Minimum in arr2: 2
+Minimum in arr3: 1
+Minimum in arr4: 1
+Minimum in arr5: 2
+```
+
+---
+
+## ✅ Complexity:
+
+* **Time Complexity:** `O(log n)` → কারণ আমরা প্রতিবার array-র অর্ধেক বাদ দিচ্ছি।
+* **Space Complexity:** `O(1)` → কোনো অতিরিক্ত মেমোরি ব্যবহার হচ্ছে না।
+
+---
+
 
 ---
 
