@@ -442,76 +442,77 @@ int main() {
 
 ## ✅ LeetCode Problems
 
-1. Binary Search ...................................................... ✔️ [Link](https://leetcode.com/problems/binary-search/)
-2. Search in Rotated Sorted Array ............ ✔️ [Link](https://leetcode.com/problems/search-in-rotated-sorted-array/)
-3. Find Minimum in Rotated Sorted Array ....... ✔️ [Link](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
-4. Search a 2D Matrix .................................. ✔️ [Link](https://leetcode.com/problems/search-a-2d-matrix/)
-5. Search Insert Position ................................. ✔️ [Link](https://leetcode.com/problems/search-insert-position/)
-6. Find First and Last Position of Element ......... ✔️ [Link](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
-7. Median of Two Sorted Arrays ...................... ✔️ [Link](https://leetcode.com/problems/median-of-two-sorted-arrays/)
-8. Peak Index in a Mountain Array ................... ✔️ [Link](https://leetcode.com/problems/peak-index-in-a-mountain-array/)
-9. Guess Number Higher or Lower .................. ✔️ [Link](https://leetcode.com/problems/guess-number-higher-or-lower/)
-10. Find Peak Element ...................................... ✔️ [Link](https://leetcode.com/problems/find-peak-element/)
+| #  | Problem                                                                                                                           | ✔️ Link                                                                                      |
+| -- | --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| 1  | [Binary Search](https://leetcode.com/problems/binary-search/)                                                                     | [✔️](https://leetcode.com/problems/binary-search/)                                           |
+| 2  | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                                   | [✔️](https://leetcode.com/problems/search-in-rotated-sorted-array/)                          |
+| 3  | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)                       | [✔️](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)                    |
+| 4  | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)                                                           | [✔️](https://leetcode.com/problems/search-a-2d-matrix/)                                      |
+| 5  | [Search Insert Position](https://leetcode.com/problems/search-insert-position/)                                                   | [✔️](https://leetcode.com/problems/search-insert-position/)                                  |
+| 6  | [Find First and Last Position of Element](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [✔️](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) |
+| 7  | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                         | [✔️](https://leetcode.com/problems/median-of-two-sorted-arrays/)                             |
+| 8  | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)                                   | [✔️](https://leetcode.com/problems/peak-index-in-a-mountain-array/)                          |
+| 9  | [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)                                       | [✔️](https://leetcode.com/problems/guess-number-higher-or-lower/)                            |
+| 10 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/)                                                             | [✔️](https://leetcode.com/problems/find-peak-element/)                                       |
 
 ---
 
 ## ✅ CodeChef Problems
 
-1. The Wave ............................................................... ✔️ [Link](https://www.codechef.com/problems/WAV2)
-2. Coins and Triangle ........................................ ✔️ [Link](https://www.codechef.com/problems/TRICOIN)
-3. Minion Chef and Bananas .......................... ✔️ [Link](https://www.codechef.com/problems/MINPERM)
-4. Wildfire ................................................................. ✔️ [Link](https://www.codechef.com/problems/WILDFIRE)
-5. Cutting Recipes ............................................. ✔️ [Link](https://www.codechef.com/problems/RECIPE)
-6. Chef and Horses ........................................... ✔️ [Link](https://www.codechef.com/problems/HORSES)
-7. Binary Search Trees .................................... ✔️ [Link](https://www.codechef.com/problems/BSTOPS)
-8. Finding Shoes ............................................... ✔️ [Link](https://www.codechef.com/problems/FINDSHOES)
-9. Saving the City ............................................. ✔️ [Link](https://www.codechef.com/problems/SAVINGIT)
-10. Binary String MEX ....................................... ✔️ [Link](https://www.codechef.com/problems/MEXSTRING)
+| #  | Problem                                                              | ✔️ Link                                           |
+| -- | -------------------------------------------------------------------- | ------------------------------------------------- |
+| 1  | [The Wave](https://www.codechef.com/problems/WAV2)                   | [✔️](https://www.codechef.com/problems/WAV2)      |
+| 2  | [Coins and Triangle](https://www.codechef.com/problems/TRICOIN)      | [✔️](https://www.codechef.com/problems/TRICOIN)   |
+| 3  | [Minion Chef and Bananas](https://www.codechef.com/problems/MINPERM) | [✔️](https://www.codechef.com/problems/MINPERM)   |
+| 4  | [Wildfire](https://www.codechef.com/problems/WILDFIRE)               | [✔️](https://www.codechef.com/problems/WILDFIRE)  |
+| 5  | [Cutting Recipes](https://www.codechef.com/problems/RECIPE)          | [✔️](https://www.codechef.com/problems/RECIPE)    |
+| 6  | [Chef and Horses](https://www.codechef.com/problems/HORSES)          | [✔️](https://www.codechef.com/problems/HORSES)    |
+| 7  | [Binary Search Trees](https://www.codechef.com/problems/BSTOPS)      | [✔️](https://www.codechef.com/problems/BSTOPS)    |
+| 8  | [Finding Shoes](https://www.codechef.com/problems/FINDSHOES)         | [✔️](https://www.codechef.com/problems/FINDSHOES) |
+| 9  | [Saving the City](https://www.codechef.com/problems/SAVINGIT)        | [✔️](https://www.codechef.com/problems/SAVINGIT)  |
+| 10 | [Binary String MEX](https://www.codechef.com/problems/MEXSTRING)     | [✔️](https://www.codechef.com/problems/MEXSTRING) |
 
 ---
 
 ## ✅ Codeforces Problems
 
-1. 230B. T-primes .............................................. ✔️ [Link](https://codeforces.com/problemset/problem/230/B)
-2. 287B. Pipeline .................................................. ✔️ [Link](https://codeforces.com/problemset/problem/287/B)
-3. 1237C2. Balanced Removals ..................... ✔️ [Link](https://codeforces.com/problemset/problem/1237/C2)
-4. 1201B. Zero Array ......................................... ✔️ [Link](https://codeforces.com/problemset/problem/1201/B)
-5. 987C. Three displays ..................................... ✔️ [Link](https://codeforces.com/problemset/problem/987/C)
-6. 115A. Party ....................................................... ✔️ [Link](https://codeforces.com/problemset/problem/115/A)
-7. 160D. Edges in MST ..................................... ✔️ [Link](https://codeforces.com/problemset/problem/160/D)
-8. 1374C. Move Brackets ................................. ✔️ [Link](https://codeforces.com/problemset/problem/1374/C)
-9. 1312C. Adding Powers ................................... ✔️ [Link](https://codeforces.com/problemset/problem/1312/C)
-10. 371C. Hamburgers ......................................... ✔️ [Link](https://codeforces.com/problemset/problem/371/C)
+| #  | Problem                                                                        | ✔️ Link                                                 |
+| -- | ------------------------------------------------------------------------------ | ------------------------------------------------------- |
+| 1  | [230B. T-primes](https://codeforces.com/problemset/problem/230/B)              | [✔️](https://codeforces.com/problemset/problem/230/B)   |
+| 2  | [287B. Pipeline](https://codeforces.com/problemset/problem/287/B)              | [✔️](https://codeforces.com/problemset/problem/287/B)   |
+| 3  | [1237C2. Balanced Removals](https://codeforces.com/problemset/problem/1237/C2) | [✔️](https://codeforces.com/problemset/problem/1237/C2) |
+| 4  | [1201B. Zero Array](https://codeforces.com/problemset/problem/1201/B)          | [✔️](https://codeforces.com/problemset/problem/1201/B)  |
+| 5  | [987C. Three displays](https://codeforces.com/problemset/problem/987/C)        | [✔️](https://codeforces.com/problemset/problem/987/C)   |
+| 6  | [115A. Party](https://codeforces.com/problemset/problem/115/A)                 | [✔️](https://codeforces.com/problemset/problem/115/A)   |
+| 7  | [160D. Edges in MST](https://codeforces.com/problemset/problem/160/D)          | [✔️](https://codeforces.com/problemset/problem/160/D)   |
+| 8  | [1374C. Move Brackets](https://codeforces.com/problemset/problem/1374/C)       | [✔️](https://codeforces.com/problemset/problem/1374/C)  |
+| 9  | [1312C. Adding Powers](https://codeforces.com/problemset/problem/1312/C)       | [✔️](https://codeforces.com/problemset/problem/1312/C)  |
+| 10 | [371C. Hamburgers](https://codeforces.com/problemset/problem/371/C)            | [✔️](https://codeforces.com/problemset/problem/371/C)   |
 
 ---
 
 ## ✅ AtCoder Problems
 
-1. ABC118 B – Foods Loved by Everyone ........ ✔️ [Link](https://atcoder.jp/contests/abc118/tasks/abc118_b)
-2. ABC203 D – Pond ............................................... ✔️ [Link](https://atcoder.jp/contests/abc203/tasks/abc203_d)
-3. ABC223 D – Restricted Permutation ........ ✔️ [Link](https://atcoder.jp/contests/abc223/tasks/abc223_d)
-4. ABC143 C – Slimes ............................................. ✔️ [Link](https://atcoder.jp/contests/abc143/tasks/abc143_c)
-5. ABC115 C – Christmas Eve .......................... ✔️ [Link](https://atcoder.jp/contests/abc115/tasks/abc115_c)
-6. ARC104 B – DNA Sequence ......................... ✔️ [Link](https://atcoder.jp/contests/arc104/tasks/arc104_b)
-7. ARC118 B – Digital Graffiti ............................ ✔️ [Link](https://atcoder.jp/contests/arc118/tasks/arc118_b)
-8. ARC065 C – bugs ................................................ ✔️ [Link](https://atcoder.jp/contests/arc065/tasks/arc065_c)
-9. ABC067 C – Splitting Piles ............................. ✔️ [Link](https://atcoder.jp/contests/abc067/tasks/arc078_b)
-10. ABC217 D – Cutting Woods ......................... ✔️ [Link](https://atcoder.jp/contests/abc217/tasks/abc217_d)
+| #  | Problem                                                                                 | ✔️ Link                                                 |
+| -- | --------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| 1  | [ABC118 B – Foods Loved by Everyone](https://atcoder.jp/contests/abc118/tasks/abc118_b) | [✔️](https://atcoder.jp/contests/abc118/tasks/abc118_b) |
+| 2  | [ABC203 D – Pond](https://atcoder.jp/contests/abc203/tasks/abc203_d)                    | [✔️](https://atcoder.jp/contests/abc203/tasks/abc203_d) |
+| 3  | [ABC223 D – Restricted Permutation](https://atcoder.jp/contests/abc223/tasks/abc223_d)  | [✔️](https://atcoder.jp/contests/abc223/tasks/abc223_d) |
+| 4  | [ABC143 C – Slimes](https://atcoder.jp/contests/abc143/tasks/abc143_c)                  | [✔️](https://atcoder.jp/contests/abc143/tasks/abc143_c) |
+| 5  | [ABC115 C – Christmas Eve](https://atcoder.jp/contests/abc115/tasks/abc115_c)           | [✔️](https://atcoder.jp/contests/abc115/tasks/abc115_c) |
+| 6  | [ARC104 B – DNA Sequence](https://atcoder.jp/contests/arc104/tasks/arc104_b)            | [✔️](https://atcoder.jp/contests/arc104/tasks/arc104_b) |
+| 7  | [ARC118 B – Digital Graffiti](https://atcoder.jp/contests/arc118/tasks/arc118_b)        | [✔️](https://atcoder.jp/contests/arc118/tasks/arc118_b) |
+| 8  | [ARC065 C – bugs](https://atcoder.jp/contests/arc065/tasks/arc065_c)                    | [✔️](https://atcoder.jp/contests/arc065/tasks/arc065_c) |
+| 9  | [ABC067 C – Splitting Piles](https://atcoder.jp/contests/abc067/tasks/arc078_b)         | [✔️](https://atcoder.jp/contests/abc067/tasks/arc078_b) |
+| 10 | [ABC217 D – Cutting Woods](https://atcoder.jp/contests/abc217/tasks/abc217_d)           | [✔️](https://atcoder.jp/contests/abc217/tasks/abc217_d) |
 
 ---
 
-## 🔍 Tag-wise Grouped Problems (Table Format)
-
-I’ll now prepare the **tag-wise groups** (`binary_search`, `lower_bound`, etc.) in clean table format, with ✔️ links in the **rightmost column** — just like above.
-
-🔄 Please give me a moment... (processing next)
-
-
-Here are the **🔍 Tag-wise Grouped Problems** exactly as you asked for — presented in **table format**, with clickable **✔️ links** in the rightmost column:
+## 🔍 Tag-wise Grouped Problems
 
 ---
 
-### ✅ `binary_search()` ব্যবহারযোগ্য (Presence Checking)
+### ✅ `binary_search()` ব্যবহারযোগ্য
 
 | Platform   | Problem                                                                                             | ✔️ Link                                                             |
 | ---------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
@@ -535,7 +536,7 @@ Here are the **🔍 Tag-wise Grouped Problems** exactly as you asked for — pre
 
 ---
 
-### ✅ Count Frequency (using `count()` or `equal_range()`)
+### ✅ `count()` / `equal_range()` ব্যবহার
 
 | Platform   | Problem                                                                                              | ✔️ Link                                                             |
 | ---------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
@@ -569,7 +570,6 @@ Here are the **🔍 Tag-wise Grouped Problems** exactly as you asked for — pre
 | AtCoder    | [ABC203 D – Pond](https://atcoder.jp/contests/abc203/tasks/abc203_d)                                             | [✔️](https://atcoder.jp/contests/abc203/tasks/abc203_d)                   |
 
 ---
-
 
 
 এই ডকুমেন্টটি এখন একটি পূর্ণাঙ্গ রেফারেন্স — C++-এ সংখ্যার presence, frequency এবং অবস্থান বের করার জন্য।
