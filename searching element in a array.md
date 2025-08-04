@@ -434,6 +434,248 @@ int main() {
 * সময় এবং performance sensitive প্রোগ্রামে `O(log n)` ভিত্তিক টেকনিক প্রাধান্য দাও
 
 
+
+
+---
+
+# 🎯 Beginner-Level Problem Set
+
+**(Topics: Searching, Counting, Binary Search, Sorting)**
+
+| #  | Platform       | Problem                                                                                    | ✔️ Link                                                                                    |
+| -- | -------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| 1  | **LeetCode**   | **Linear Search** – Check if a number exists                                               | [✔️](https://leetcode.com/problems/check-if-n-and-its-double-exist/)                       |
+| 2  | **LeetCode**   | **Binary Search** – Find target in sorted array                                            | [✔️](https://leetcode.com/problems/binary-search/)                                         |
+| 3  | **LeetCode**   | **Search Insert Position**                                                                 | [✔️](https://leetcode.com/problems/search-insert-position/)                                |
+| 4  | **LeetCode**   | **Counting Occurrences** – Count 1s in a sorted binary array                               | [✔️](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/) |
+| 5  | **Codeforces** | **Sort + Count Differences** – [A. Twins](https://codeforces.com/problemset/problem/160/A) | [✔️](https://codeforces.com/problemset/problem/160/A)                                      |
+| 6  | **Codeforces** | **Greedy + Sorting** – [A. Presents](https://codeforces.com/problemset/problem/136/A)      | [✔️](https://codeforces.com/problemset/problem/136/A)                                      |
+| 7  | **AtCoder**    | **ABC081 B – Shift only (count division by 2)**                                            | [✔️](https://atcoder.jp/contests/abc081/tasks/abc081_b)                                    |
+| 8  | **CodeChef**   | **Counting Frequency** – [Problem: COUNTIT](https://www.codechef.com/problems/COUNTIT)     | [✔️](https://www.codechef.com/problems/COUNTIT)                                            |
+| 9  | **CodeChef**   | **Sorting & Search** – [Problem: CHEFRES](https://www.codechef.com/problems/CHEFRES)       | [✔️](https://www.codechef.com/problems/CHEFRES)                                            |
+| 10 | **LeetCode**   | **Sorting Integers by Number of 1 Bits**                                                   | [✔️](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/)                 |
+
+---
+
+
+---
+
+## ✅ 1. [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/)
+
+**Topic:** Searching
+
+```cpp
+bool checkIfExist(vector<int>& arr) {
+    unordered_set<int> seen;
+    for (int num : arr) {
+        if (seen.count(num * 2) || (num % 2 == 0 && seen.count(num / 2)))
+            return true;
+        seen.insert(num);
+    }
+    return false;
+}
+```
+
+---
+
+## ✅ 2. [Binary Search](https://leetcode.com/problems/binary-search/)
+
+**Topic:** Binary Search
+
+```cpp
+int search(vector<int>& nums, int target) {
+    int left = 0, right = nums.size() - 1;
+
+    while (left <= right) {
+        int mid = (left + right) / 2;
+        if (nums[mid] == target) return mid;
+        else if (nums[mid] < target) left = mid + 1;
+        else right = mid - 1;
+    }
+
+    return -1;
+}
+```
+
+---
+
+## ✅ 3. [Search Insert Position](https://leetcode.com/problems/search-insert-position/)
+
+**Topic:** Binary Search
+
+```cpp
+int searchInsert(vector<int>& nums, int target) {
+    int low = 0, high = nums.size() - 1;
+    while (low <= high) {
+        int mid = (low + high) / 2;
+        if (nums[mid] == target) return mid;
+        else if (nums[mid] < target) low = mid + 1;
+        else high = mid - 1;
+    }
+    return low;
+}
+```
+
+---
+
+## ✅ 4. [Special Array With X Elements Greater Than or Equal X](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/)
+
+**Topic:** Counting
+
+```cpp
+int specialArray(vector<int>& nums) {
+    sort(nums.begin(), nums.end());
+    int n = nums.size();
+    for (int x = 0; x <= n; x++) {
+        int cnt = lower_bound(nums.begin(), nums.end(), x) - nums.begin();
+        if (n - cnt == x) return x;
+    }
+    return -1;
+}
+```
+
+---
+
+## ✅ 5. [Codeforces 160A – Twins](https://codeforces.com/problemset/problem/160/A)
+
+**Topic:** Sorting + Counting
+
+```cpp
+void solve() {
+    int n; cin >> n;
+    vector<int> a(n);
+    int total = 0;
+    for (int &x : a) {
+        cin >> x;
+        total += x;
+    }
+    sort(a.rbegin(), a.rend());
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum += a[i];
+        if (sum > total - sum) {
+            cout << i + 1 << "\n";
+            return;
+        }
+    }
+}
+```
+
+---
+
+## ✅ 6. [Codeforces 136A – Presents](https://codeforces.com/problemset/problem/136/A)
+
+**Topic:** Array Reordering
+
+```cpp
+void solve() {
+    int n; cin >> n;
+    vector<int> p(n), res(n);
+    for (int i = 0; i < n; i++) {
+        cin >> p[i];
+        res[p[i] - 1] = i + 1;
+    }
+    for (int x : res) cout << x << " ";
+}
+```
+
+---
+
+## ✅ 7. [AtCoder ABC081B – Shift Only](https://atcoder.jp/contests/abc081/tasks/abc081_b)
+
+**Topic:** Counting
+
+```cpp
+void solve() {
+    int n; cin >> n;
+    vector<int> a(n);
+    for (int &x : a) cin >> x;
+    int count = 0;
+    while (true) {
+        for (int &x : a) {
+            if (x % 2 != 0) {
+                cout << count << "\n";
+                return;
+            }
+            x /= 2;
+        }
+        count++;
+    }
+}
+```
+
+---
+
+## ✅ 8. [CodeChef – COUNTIT](https://www.codechef.com/problems/COUNTIT)
+
+**Topic:** Counting greater elements
+
+```cpp
+void solve() {
+    int n; cin >> n;
+    vector<int> a(n);
+    for (int &x : a) cin >> x;
+
+    int cnt = 0;
+    for (int i = 0; i < n - 1; i++)
+        if (a[i] < a[i + 1]) cnt++;
+
+    cout << cnt << "\n";
+}
+```
+
+---
+
+## ✅ 9. [CodeChef – CHEFRES](https://www.codechef.com/problems/CHEFRES)
+
+**Topic:** Binary Search on waiting time
+
+```cpp
+void solve() {
+    int t; cin >> t;
+    while (t--) {
+        int n, q;
+        cin >> n >> q;
+        vector<int> arr(n);
+        for (int &x : arr) cin >> x;
+        sort(arr.begin(), arr.end());
+
+        while (q--) {
+            int x; cin >> x;
+            auto it = lower_bound(arr.begin(), arr.end(), x);
+            if (it == arr.end()) cout << "-1\n";
+            else cout << *it - x << "\n";
+        }
+    }
+}
+```
+
+---
+
+## ✅ 10. [Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/)
+
+**Topic:** Sorting + Bit Counting
+
+```cpp
+int countBits(int x) {
+    int cnt = 0;
+    while (x) {
+        cnt += x % 2;
+        x /= 2;
+    }
+    return cnt;
+}
+
+vector<int> sortByBits(vector<int>& arr) {
+    sort(arr.begin(), arr.end(), [](int a, int b) {
+        int ca = __builtin_popcount(a), cb = __builtin_popcount(b);
+        return ca == cb ? a < b : ca < cb;
+    });
+    return arr;
+}
+```
+
+
 ---
 
 # 📚 Practice Problem List with Clickable ✔️ Links
