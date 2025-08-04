@@ -506,6 +506,73 @@ int main() {
 
 ---
 
+---
+
+## 🔍 Tag-wise Problem Grouping
+
+---
+
+### ✅ `binary_search()` ব্যবহারযোগ্য (Presence Checking)
+
+| Platform   | Problem                                                                                             | Link |
+| ---------- | --------------------------------------------------------------------------------------------------- | ---- |
+| LeetCode   | [704. Binary Search](https://leetcode.com/problems/binary-search/)                                  | ✔️   |
+| LeetCode   | [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | ✔️   |
+| LeetCode   | [374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)    | ✔️   |
+| Codeforces | [371C. Hamburgers](https://codeforces.com/problemset/problem/371/C)                                 | ✔️   |
+| AtCoder    | [ABC203 D – Pond](https://atcoder.jp/contests/abc203/tasks/abc203_d)                                | ✔️   |
+
+---
+
+### ✅ `lower_bound()` / `upper_bound()` ব্যবহারযোগ্য
+
+| Platform   | Problem                                                                                                                                               | Link |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| LeetCode   | [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | ✔️   |
+| LeetCode   | [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)                                                                   | ✔️   |
+| LeetCode   | [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                                          | ✔️   |
+| Codeforces | [987C. Three displays](https://codeforces.com/problemset/problem/987/C)                                                                               | ✔️   |
+| AtCoder    | [ABC067 C – Splitting Piles](https://atcoder.jp/contests/abc067/tasks/arc078_b)                                                                       | ✔️   |
+
+---
+
+### ✅ Count Frequency (using `count()` or `equal_range()`)
+
+| Platform   | Problem                                                                                              | Link |
+| ---------- | ---------------------------------------------------------------------------------------------------- | ---- |
+| Codeforces | [115A. Party](https://codeforces.com/problemset/problem/115/A)                                       | ✔️   |
+| CodeChef   | [Cutting Recipes](https://www.codechef.com/problems/RECIPE)                                          | ✔️   |
+| LeetCode   | [852. Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/) | ✔️   |
+| LeetCode   | [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/)                           | ✔️   |
+
+---
+
+### ✅ STL `find()` বা Manual Linear Search
+
+| Platform   | Problem                                                                                 | Link |
+| ---------- | --------------------------------------------------------------------------------------- | ---- |
+| Codeforces | [1374C. Move Brackets](https://codeforces.com/problemset/problem/1374/C)                | ✔️   |
+| Codeforces | [1312C. Adding Powers](https://codeforces.com/problemset/problem/1312/C)                | ✔️   |
+| CodeChef   | [Finding Shoes](https://www.codechef.com/problems/FINDSHOES)                            | ✔️   |
+| AtCoder    | [ABC143 C – Slimes](https://atcoder.jp/contests/abc143/tasks/abc143_c)                  | ✔️   |
+| AtCoder    | [ABC118 B – Foods Loved by Everyone](https://atcoder.jp/contests/abc118/tasks/abc118_b) | ✔️   |
+
+---
+
+### ✅ Advanced Binary Search (Search Space Optimization)
+
+| Platform   | Problem                                                                                                          | Link |
+| ---------- | ---------------------------------------------------------------------------------------------------------------- | ---- |
+| LeetCode   | [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | ✔️   |
+| LeetCode   | [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                     | ✔️   |
+| Codeforces | [287B. Pipeline](https://codeforces.com/problemset/problem/287/B)                                                | ✔️   |
+| Codeforces | [160D. Edges in MST](https://codeforces.com/problemset/problem/160/D)                                            | ✔️   |
+| AtCoder    | [ABC203 D – Pond](https://atcoder.jp/contests/abc203/tasks/abc203_d)                                             | ✔️   |
+
+---
+
+
+
 
 
 এই ডকুমেন্টটি এখন একটি পূর্ণাঙ্গ রেফারেন্স — C++-এ সংখ্যার presence, frequency এবং অবস্থান বের করার জন্য।
