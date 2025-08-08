@@ -1,0 +1,38 @@
+{
+  "leetcode": [
+    {"num": 1, "title": "Top K Frequent Elements", "slug": "top-k-frequent-elements"},
+    {"num": 2, "title": "Count Elements With Maximum Frequency", "slug": "count-elements-with-maximum-frequency"},
+    {"num": 3, "title": "Sort Array by Increasing Frequency", "slug": "sort-array-by-increasing-frequency"},
+    {"num": 4, "title": "Frequency of the Most Frequent Element", "slug": "frequency-of-the-most-frequent-element"},
+    {"num": 5, "title": "Range Frequency Queries", "slug": "range-frequency-queries"},
+    {"num": 6, "title": "Most Frequent Number Following Key in an Array", "slug": "most-frequent-number-following-key-in-an-array"},
+    {"num": 7, "title": "Count Substrings With K-Frequency Characters I", "slug": "count-substrings-with-k-frequency-characters-i"},
+    {"num": 8, "title": "Apply Operations to Maximize Frequency Score", "slug": "apply-operations-to-maximize-frequency-score"},
+    {"num": 9, "title": "Maximum Frequency of an Element After Performing Operations II", "slug": "maximum-frequency-of-an-element-after-performing-operations-ii"},
+    {"num": 10, "title": "Find Occurrences of an Element in an Array", "slug": "find-occurrences-of-an-element-in-an-array"}
+  ],
+  "codeforces": [
+    {"num": 11, "title": "Petya and Strings", "contestId": 112, "index": "A"},
+    {"num": 12, "title": "Boy or Girl", "contestId": 236, "index": "A"},
+    {"num": 13, "title": "Helpful Maths", "contestId": 339, "index": "A"},
+    {"num": 14, "title": "Pangram", "contestId": 520, "index": "A"},
+    {"num": 15, "title": "Games", "contestId": 268, "index": "A"},
+    {"num": 16, "title": "Word", "contestId": 59, "index": "A"},
+    {"num": 17, "title": "Is your horseshoe on the other hoof?", "contestId": 228, "index": "A"},
+    {"num": 18, "title": "Anton and Letters", "contestId": 443, "index": "A"},
+    {"num": 19, "title": "Chat room", "contestId": 58, "index": "A"},
+    {"num": 20, "title": "Dubstep", "contestId": 208, "index": "A"}
+  ],
+  "codechef": [
+    {"num": 21, "title": "Frequency of Each Element in the Array", "code": "DSAAGP35"},
+    {"num": 22, "title": "Using Hashing to Optimize Counting Frequency", "code": "DSAAGP34"},
+    {"num": 23, "title": "Frequency of Elements Using Hashing", "code": "DSAAGP36"},
+    {"num": 24, "title": "Distinct Codes", "code": "DISTCODE"},
+    {"num": 25, "title": "Chef and Subarrays", "code": "CHEFARRP"},
+    {"num": 26, "title": "Lapindromes", "code": "LAPIN"},
+    {"num": 27, "title": "Most Frequent", "code": "MOSTFREQ"},
+    {"num": 28, "title": "Clean the Sequence", "code": "CLEANSEQ"},
+    {"num": 29, "title": "Count the Holidays", "code": "HOLIDAYS"},
+    {"num": 30, "title": "Counting Words", "code": "WORDCNT"}
+  ]
+}
