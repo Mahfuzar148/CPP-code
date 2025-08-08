@@ -1,0 +1,36 @@
+name: Update Practice Sheet (Auto)
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # প্রতি ৬ ঘণ্টায়
+  workflow_dispatch: {}     # ম্যানুয়াল রান
+  push:
+    paths:
+      - problems.json
+      - update_status.py
+      - practice_sheet.md
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install deps
+        run: pip install requests
+      - name: Update status
+        env:
+          LEETCODE_USERNAME: ${{ secrets.LEETCODE_USERNAME }}
+          LEETCODE_SESSION:  ${{ secrets.LEETCODE_SESSION }}
+          CODEFORCES_HANDLE: ${{ secrets.CODEFORCES_HANDLE }}
+          CODECHEF_HANDLE:   ${{ secrets.CODECHEF_HANDLE }}
+        run: python update_status.py
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add practice_sheet.md
+          git commit -m "Auto-update practice sheet" || echo "No changes"
+          git push
